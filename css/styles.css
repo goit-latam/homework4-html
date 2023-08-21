@@ -331,7 +331,7 @@ body {
   justify-content: space-between;
 }
 
-.clients-list-item {
+.clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,19 +339,18 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.clients-list-link {
-  display: flex;
   fill: #afb1b8;
 }
 
-.clients-list-item:hover .clients-list-icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
 }
 
-.clients-list-item:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 /*footer*/
